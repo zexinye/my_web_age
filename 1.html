@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="F:/research/maps/china_provinces/echarts.js"></script>
+        <script type="text/javascript" src="F:/research/maps/china_provinces/maps/lines.js"></script>
+
+</head>
+<body>
+    <div id="1e5e5d8d1e734c2b887a4c3e72bd66d3" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_1e5e5d8d1e734c2b887a4c3e72bd66d3 = echarts.init(
+            document.getElementById('1e5e5d8d1e734c2b887a4c3e72bd66d3'), 'white', {renderer: 'canvas'});
+        var option_1e5e5d8d1e734c2b887a4c3e72bd66d3 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "scatter",
+            "name": "受教育平均年限",
+            "coordinateSystem": "geo",
+            "symbolSize": 8,
+            "data": [
+                {
+                    "name": "成都市",
+                    "value": [
+                        104.07,
+                        30.67,
+                        100
+                    ]
+                },
+                {
+                    "name": "毕节市",
+                    "value": [
+                        105.28,
+                        27.3,
+                        200
+                    ]
+                },
+                {
+                    "name": "六盘水市",
+                    "value": [
+                        104.83,
+                        26.6,
+                        150
+                    ]
+                }
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "受教育平均年限"
+            ],
+            "selected": {
+                "受教育平均年限": true
+            },
+            "show": true
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line",
+            "snap":true,
+        },
+
+        "formatter": 'a',
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "Geo-\u57fa\u672c\u793a\u4f8b"
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 20,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true
+    },
+    "geo": {
+        "map": "线段",
+        "roam": true,
+        "label": {
+            "show": false,
+            "position": "top",
+            "margin": 8,
+            // function (params) {return params.name + ' : ' + params.value[0];}
+            "formatter": '{a}111',
+        },
+        "emphasis": {
+            "itemStyle": {
+                "borderColor": "yellow",
+                "areaColor": "yellow"
+            },
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": '{a}122',
+            }
+        },
+		'regions': [
+
+		//     {
+		// 	'name': '海南',
+		// 	'itemStyle': {
+		// 		'areaColor': 'red',
+		// 		'color': 'red'
+		// 	}
+		// },
+		{
+			'name': '遵义市',
+			'selected':false,
+			'itemStyle': {
+				// 'areaColor': 'red',
+				// 'color': 'red',
+                // "borderColor": "blue",
+                "borderWidth": 0,
+			},
+			"label":{
+					"show":true,
+					'position':'top',
+					'color':'black',
+					'fontSize':12,
+					"forMatter":'1',
+					},
+			"emphasis": {
+				"label":{
+							"show":true,
+							'position':'top',
+							"forMatter":'2',
+							'color':'yellow',
+							'fontSize':28,},
+				"itemStyle":{"areaColor":'red',
+                                "borderColor": "blue",},
+			},
+		},
+		
+		{
+			'name': '泸州市',
+			'selected':false,
+			'itemStyle': {
+				'areaColor': 'red',
+				// 'color': 'red',
+                // "borderColor": "yellow",
+                "borderWidth": 0,
+			},
+			"label":{
+					"show":true,
+					'position':'top',
+					'color':'black',
+					'fontSize':12,
+					"forMatter":'1',
+					},
+			"emphasis": {
+				"label":{
+							"show":true,
+							'position':'top',
+							"forMatter":'2',
+							'color':'yellow',
+							'fontSize':28,},
+				"itemStyle":{"areaColor":'red'},
+			},
+		},
+{
+			'name': '四川',
+			'selected':false,
+			'itemStyle': {
+				// 'areaColor': 'red',
+				// 'color': 'red',
+                "borderColor": "yellow",
+                "borderWidth": 5,
+                opacity:0,
+			},
+			"label":{
+					"show":true,
+					'position':'top',
+					'color':'black',
+					'fontSize':12,
+					"forMatter":'1',
+					},
+			// "emphasis": {
+			// 	"label":{
+			// 				"show":true,
+			// 				'position':'top',
+			// 				"forMatter":'2',
+			// 				'color':'yellow',
+			// 				'fontSize':28,},
+			// 	"itemStyle":{"areaColor":'red'},
+			// },
+		},
+
+{
+			'name': '贵州',
+			'selected':false,
+			'itemStyle': {
+				// 'areaColor': 'red',
+				// 'color': 'red',
+                "borderColor": "blue",
+                "borderWidth": 6,
+			},
+			"label":{
+					"show":true,
+					'position':'top',
+					'color':'black',
+					'fontSize':12,
+					"forMatter":'1',
+					},
+			"emphasis": {
+				"label":{
+							"show":true,
+							'position':'top',
+							"forMatter":'2',
+							'color':'yellow',
+							'fontSize':28,},
+				"itemStyle":{"areaColor":'red'},
+			},
+		},
+
+{
+			'name': '云南',
+			'selected':false,
+			'itemStyle': {
+				// 'areaColor': 'red',
+				// 'color': 'red',
+                "borderColor": "yellow",
+                "borderWidth": 1,
+			},
+			"label":{
+					"show":true,
+					'position':'top',
+					'color':'black',
+					'fontSize':12,
+					"forMatter":'1',
+					},
+			"emphasis": {
+				"label":{
+							"show":true,
+							'position':'top',
+							"forMatter":'2',
+							'color':'yellow',
+							'fontSize':28,},
+				"itemStyle":{"areaColor":'red'},
+			},
+		},
+
+
+        ]
+    }
+};
+        chart_1e5e5d8d1e734c2b887a4c3e72bd66d3.setOption(option_1e5e5d8d1e734c2b887a4c3e72bd66d3);
+    </script>
+</body>
+</html>
